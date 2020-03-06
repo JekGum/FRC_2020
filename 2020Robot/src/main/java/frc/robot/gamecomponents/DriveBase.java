@@ -6,8 +6,8 @@ import edu.wpi.first.wpilibj.drive.DifferentialDrive;
 
 public class DriveBase{
 
-    private SpeedController LS = new Spark(Config.DB_LEFTSIDE_CHANNEL);
-    private SpeedController RS = new Spark(Config.DB_RIGHTSIDE_CHANNEL);
+    private SpeedController LS = new VictorSP(Config.DB_LEFTSIDE_CHANNEL);
+    private SpeedController RS = new VictorSP(Config.DB_RIGHTSIDE_CHANNEL);
 
     private DifferentialDrive DB = new DifferentialDrive(LS, RS);
 

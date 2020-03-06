@@ -8,5 +8,7 @@ public interface ControllerClass {
     double getDriveDirection();
 
     WoFOperation getWoFOperation();
+    ColourSensorOperation getColourSensorOperation();
+    BallGrabOperation getBallGrabOperation();
 
 }
